@@ -1,9 +1,9 @@
 // App.js
 import "./App.css";
-import Ticket from '../src/Components/Ticket/Ticket';
+import Ticket from "../src/Components/Ticket/Ticket";
 
 function App() {
-  <h1>Task Manager By Divya Saini</h1>
+  <h1>Task Manager By Divya Saini</h1>;
   const tickets = [
     {
       title: "NGA School Website",
@@ -13,7 +13,8 @@ function App() {
         costSpent: 2000000,
       },
       assignees: ["Person1", "Person2", "Person3"],
-      tData: "Create a school website for NGA school with lots of functionality.",
+      tData:
+        "Create a school website for NGA school with lots of functionality.",
       remainingdays: 5,
     },
     {
@@ -46,7 +47,8 @@ function App() {
         costSpent: 750000,
       },
       assignees: ["Person8", "Person9", "Person10"],
-      tData: "Plan and execute the annual science fair for middle and high school students",
+      tData:
+        "Plan and execute the annual science fair for middle and high school students",
       remainingdays: 12,
     },
     {
@@ -57,7 +59,8 @@ function App() {
         costSpent: 300000,
       },
       assignees: ["Person11", "Person12"],
-      tData: "Organize a professional development workshop for teachers on new educational technologies",
+      tData:
+        "Organize a professional development workshop for teachers on new educational technologies",
       remainingdays: 3,
     },
     {
@@ -68,7 +71,8 @@ function App() {
         costSpent: 5000000,
       },
       assignees: ["Person13", "Person14", "Person15"],
-      tData: "Renovate and modernize the school cafeteria to improve dining experience",
+      tData:
+        "Renovate and modernize the school cafeteria to improve dining experience",
       remainingdays: 20,
     },
     {
@@ -79,7 +83,8 @@ function App() {
         costSpent: 100000,
       },
       assignees: ["Person16", "Person17"],
-      tData: "Organize and conduct parent-teacher conferences for all grade levels",
+      tData:
+        "Organize and conduct parent-teacher conferences for all grade levels",
       remainingdays: 7,
     },
     {
@@ -101,7 +106,8 @@ function App() {
         costSpent: 400000,
       },
       assignees: ["Person21", "Person22"],
-      tData: "Produce and direct the annual school play, including auditions, rehearsals, and performances",
+      tData:
+        "Produce and direct the annual school play, including auditions, rehearsals, and performances",
       remainingdays: 25,
     },
     {
@@ -112,9 +118,10 @@ function App() {
         costSpent: 3000000,
       },
       assignees: ["Person23", "Person24", "Person25"],
-      tData: "Upgrade the school's IT infrastructure, including network, servers, and computer labs",
+      tData:
+        "Upgrade the school's IT infrastructure, including network, servers, and computer labs",
       remainingdays: 10,
-    }
+    },
   ];
 
   return (
