@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
-import './Ticket.css';
+import { useState } from "react";
+import "./Ticket.css";
 
 function Ticket({
   title,
@@ -8,9 +9,29 @@ function Ticket({
   Reporter = "Divya Saini",
   tData = "No Data present",
   remainingdays,
+  onStarToggle
 }) {
+  const [star, setStar] = useState(false);
+
+  
+
+  const toggleLike = () => {
+    const newStarState = !star;
+    setStar(newStarState);
+    onStarToggle(newStarState);
+  };
+
+  console.log("Current star state:", star);
+
   return (
     <div className="ticket">
+      <div onClick={toggleLike} className="star-icon">
+        {star ? (
+          <i className="fa-solid fa-star" style={{ color: "yellow" }}></i>
+        ) : (
+          <i className="fa-regular fa-star"></i>
+        )}
+      </div>
       <h2>{title}</h2>
       <p>{tData}</p>
       <p>Start Date: {description.startDate}</p>

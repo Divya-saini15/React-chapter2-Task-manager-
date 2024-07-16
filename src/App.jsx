@@ -1,5 +1,7 @@
 // App.js
 import "./App.css";
+import { useState } from "react";
+
 import Ticket from "../src/Components/Ticket/Ticket";
 
 function App() {
@@ -123,9 +125,15 @@ function App() {
       remainingdays: 10,
     },
   ];
+  const [starredCount, setStarredCount] = useState(0); //counter of stared tickets
+  const handleStarToggle = (isStarred) => {
+    setStarredCount((prevCount) => (isStarred ? prevCount + 1 : prevCount - 1));
+  };
 
   return (
     <div className="app">
+      <h1 className="mainheading">Ticket Manager</h1>
+      <div className="starred-count">Starred Tickets: {starredCount}</div>
       <div className="tickets-container">
         {tickets.map((ticket, index) => (
           <Ticket
@@ -135,6 +143,7 @@ function App() {
             assignees={ticket.assignees.join(", ")}
             tData={ticket.tData}
             remainingdays={ticket.remainingdays}
+            onStarToggle={handleStarToggle}
           />
         ))}
       </div>

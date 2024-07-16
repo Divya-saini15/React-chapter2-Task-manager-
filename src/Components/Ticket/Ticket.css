@@ -17,7 +17,7 @@
   top: -50%;
   left: -50%;
   width: 200%;
-  height: 200%;
+ 
   background: linear-gradient(
     to bottom right,
     rgba(255, 255, 255, 0.1) 0%,
@@ -81,4 +81,25 @@
   justify-content: center;
   gap: 30px;
   padding: 30px;
+}
+
+.star-icon {
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.star-icon i.fa-solid.fa-star {
+  color: #ffeb3b;
+  text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b, 0 0 30px #ffeb3b;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #ffeb3b, 0 0 10px #ffeb3b, 0 0 15px #ffeb3b;
+  }
+  to {
+    text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffeb3b, 0 0 30px #ffeb3b;
+  }
 }
